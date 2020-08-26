@@ -1,0 +1,33 @@
+<!-- FORMS -->
+<form action="/path" method="/get">
+    <label for=""></label>
+    <input type="number"><!-- will show keypad when set to number -->
+    
+<!-- DELETE METHOD -->
+<form action="/poste" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button>delete</button>
+</form>
+
+<!-- PATCH / UPDATE METHOD -->
+<form action="/route" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <input type="hidden" name="id" value="<%=["id"]%>">
+    
+    <label for="">name</label>
+    <input name="name" type="text" value="<%=dish["name"]%>"><button>update</button>
+</form>
+
+<!-- EMAIL INPUT -->
+<form action="/route" method="post">
+
+    <label for="">email</label>
+    <input type="email"><!-- show "@" symbol when set to email-->
+
+    <label for="">password</label>
+    <input name="password" type="password">
+
+    <button>login</button>
+
+</form>
+

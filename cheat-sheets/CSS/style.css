@@ -1,0 +1,85 @@
+/* ===============
+    Shortcuts
+=============== 
+
+repeat(4, 1fr)
+
+*/
+
+/* ===============
+    Shapes
+=============== */
+.square {
+    border: solid 21px #f0f;
+    width: 50px;
+    height: 50px;
+}
+
+.circle {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border: solid 21px #f00;
+    width: 50px;
+    height: 50px;
+  }
+
+
+/* ===============
+    Display
+=============== */
+div {
+    display: block; /* down the page - vertically */
+    display: inline; /* horizontal */
+    display: flex; 
+    flex-wrap: wrap; /* will create new lines based on fixed with */
+
+/* ===============
+    responsive
+=============== */
+@media (max-width: 600px){
+    body, .class {
+        width: 100%;
+        float: none;
+        border: none;
+    }
+}
+
+
+/* ===============
+    Parents
+=============== */
+div {
+    display: grid; /* down the page - vertically */
+    display: flex; /* horizontal */
+}
+
+/* ===============
+      Center
+=============== */
+div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ===============
+    Object Fit
+=============== */
+crop image to fit section
+
+
+/* ===============
+    Positioning
+=============== */
+div {
+    position: static; /* default, renders the elements in the order of the document flow*/
+    position: relative; /*  relative to its normal position, can add properties like top, left, right, bottom */
+    position: absolute; /* target any position within a relative element */
+    position: fixed; /* fixed position to browser window, no matter where you scroll it will always be in the same position, like for social media or something */
+    position: initial; /* set to default value */
+    position: inherit; /* take property from parent element */
+
+}
+
+/*  */

@@ -1,0 +1,1 @@
+div#name - shortcut to name

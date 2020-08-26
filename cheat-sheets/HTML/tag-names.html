@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Syntax for HTML 5 document type -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    ======================
+        <!-- FORMS --> 
+    ======================
+    <form action="/path" method="/get">
+        <label for=""></label>
+        <input type="number"><!-- will show keypad when set to number -->
+        
+        <!-- DELETE METHOD -->
+        <form action="/dishes" method="post">
+            <input type="hidden" name="_method" value="delete">
+        </form>
+
+        <br> <!-- line beak  -->
+
+        <!-- PATCH / UPDATE METHOD -->
+        <form action="/dishes" method="post">
+    
+            <input type="hidden" name="_method" value="patch">
+            <input type="hidden" name="id" value="<%=["id"]%>">
+           
+            <label for="">name</label>
+            <input name="name" type="text" value="<%=dish["name"]%>">
+        </form>
+    </form>
+
+    =======================
+        <!-- INPUTS -->
+    =======================
+    <label for="">email</label>
+    <input name="email" type="email"><!-- show "@" symbol when set to email-->
+
+    <label for="">password</label>
+    <input name="password" type="password">
+
+    <label for="">range</label>
+    <input name="range" type="range" max="100"(stepping)>
+
+    <label for="">number</label>
+    <input name="number" type="number">
+
+
+    =======================
+        <!-- DROP DOWN -->
+    =======================
+
+    <select name="" id="">
+        <option value="">one</option>
+        <option value="">two</option>
+        <option value="">three</option>
+        <option value="">four</option>
+    </select>
+
+    
+    ============================
+    <!-- Paragraphs and text -->
+    ============================
+    <p>
+        <strong> </strong> <!-- inline BOLD highlight-->
+        <em></em><!-- emphasize text (Italic by default) -->
+        <span></span>
+    </p> 
+
+    <hr> <!-- Horizontal rule-->
+    <br> <!-- Break / add one line of spacing -->
+
+    ============================
+         <!-- Links -->
+    ============================
+    <a href=""></a> <!-- link with href as the location or route -->
+    <a href="" target="_blank"></a> <!-- Target will open a new tab -->
+
+    ============================
+         <!-- Lists -->
+    ============================
+    <ul></ul> <!-- Unordered list / bullet points / disc / nav bar -->
+    <ol></ol> <!-- Numbered list -->
+    <li></li> <!-- List. Dot point -->
+
+
+    <script src='script.js'></script> <!--  add script -->
+</body>
+</html>
+
+<!--  -->
